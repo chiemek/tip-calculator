@@ -1,7 +1,10 @@
 import React from "react";
-
-const Message = ({ bill }) => {
-  return <h1>You will pay $92 (${bill} + $12 tip)</h1>;
+const Message = ({ bill, tip }) => {
+  return (
+    <div>
+      You pay ${bill + tip} (${bill} + ${tip} tip)
+    </div>
+  );
 };
 
 export default Message;
